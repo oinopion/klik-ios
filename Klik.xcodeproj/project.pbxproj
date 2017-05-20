@@ -427,6 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hauru.Klik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -440,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hauru.Klik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -520,6 +522,7 @@
 				3726B1131ED0A0A300147C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3726B1141ED0A0A300147C9E /* Build configuration list for PBXNativeTarget "KlikTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +531,7 @@
 				3726B1161ED0A0A300147C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3726B1171ED0A0A300147C9E /* Build configuration list for PBXNativeTarget "KlikUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +540,7 @@
 				3726B1191ED0A0A300147C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

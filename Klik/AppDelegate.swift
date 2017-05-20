@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Klik
-//
-//  Created by Tomek Paczkowski on 20/05/2017.
-//  Copyright © 2017 Tomek Paczkowski. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
