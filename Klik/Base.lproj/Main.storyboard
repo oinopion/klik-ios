@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Klik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Klik" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,22 +22,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.26274509800000001" green="0.34901960780000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--Counter View Controller-->
+        <scene sceneID="wtW-mu-C52">
+            <objects>
+                <viewController storyboardIdentifier="CounterViewController" id="7lE-ig-hyA" customClass="CounterViewController" customModule="Klik" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skS-df-eJF"/>
+                        <viewControllerLayoutGuide type="bottom" id="W7i-sw-KNP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KoW-p0-COc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="far-Qr-jSp">
-                                <rect key="frame" x="20" y="48" width="339" height="423"/>
+                                <rect key="frame" x="16" y="48" width="343" height="424"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9L-rZ-lIe" userLabel="Counter Name">
-                                        <rect key="frame" x="0.0" y="0.0" width="339" height="33.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="tVp-jo-bUj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" red="0.90588235289999997" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="8SJ-JX-mCe">
-                                        <rect key="frame" x="0.0" y="55.5" width="339" height="367.5"/>
+                                        <rect key="frame" x="0.0" y="56" width="343" height="368"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-Od-6tB" userLabel="Counter Value" customClass="InsetLabel" customModule="Klik" customModuleProvider="target">
-                                                <rect key="frame" x="75.5" y="0.0" width="188" height="73.5"/>
+                                                <rect key="frame" x="77.5" y="0.0" width="188" height="74"/>
                                                 <color key="backgroundColor" red="0.90588235289999997" green="0.94117647059999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="74" id="U5e-J4-lgu"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="56"/>
                                                 <color key="textColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -60,7 +84,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdm-Hi-DQ3" userLabel="Increment Button">
-                                                <rect key="frame" x="44.5" y="117.5" width="250" height="250"/>
+                                                <rect key="frame" x="46.5" y="118" width="250" height="250"/>
                                                 <accessibility key="accessibilityConfiguration" label="Increment"/>
                                                 <state key="normal" image="AddButtonNormal"/>
                                                 <state key="highlighted" image="AddButtonActive"/>
@@ -72,15 +96,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.34901960780000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="far-Qr-jSp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" multiplier="2" constant="8" symbolic="YES" id="LTG-wI-3UB"/>
-                            <constraint firstItem="far-Qr-jSp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Rls-eI-otJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="far-Qr-jSp" secondAttribute="trailing" id="wTF-B0-BKZ"/>
+                            <constraint firstItem="far-Qr-jSp" firstAttribute="leading" secondItem="KoW-p0-COc" secondAttribute="leadingMargin" id="SoU-Vr-G1W"/>
+                            <constraint firstItem="far-Qr-jSp" firstAttribute="top" secondItem="skS-df-eJF" secondAttribute="bottom" multiplier="2" constant="8" symbolic="YES" id="cll-lo-o7O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="far-Qr-jSp" secondAttribute="trailing" id="y08-JE-vwU"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drq-z9-TT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="696" y="37"/>
         </scene>
     </scenes>
     <resources>

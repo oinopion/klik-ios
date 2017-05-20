@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3726B0EA1ED0A0A300147C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726B0E91ED0A0A300147C9E /* AppDelegate.swift */; };
-		3726B0EC1ED0A0A300147C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726B0EB1ED0A0A300147C9E /* ViewController.swift */; };
+		3726B0EC1ED0A0A300147C9E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726B0EB1ED0A0A300147C9E /* RootViewController.swift */; };
 		3726B0EF1ED0A0A300147C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3726B0ED1ED0A0A300147C9E /* Main.storyboard */; };
 		3726B0F21ED0A0A300147C9E /* Klik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3726B0F01ED0A0A300147C9E /* Klik.xcdatamodeld */; };
 		3726B0F41ED0A0A300147C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3726B0F31ED0A0A300147C9E /* Assets.xcassets */; };
@@ -16,6 +16,7 @@
 		3726B1021ED0A0A300147C9E /* KlikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726B1011ED0A0A300147C9E /* KlikTests.swift */; };
 		3726B10D1ED0A0A300147C9E /* KlikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726B10C1ED0A0A300147C9E /* KlikUITests.swift */; };
 		3751817E1ED0A982005FC608 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751817D1ED0A982005FC608 /* InsetLabel.swift */; };
+		375181A21ED0C216005FC608 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375181A11ED0C216005FC608 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 /* Begin PBXFileReference section */
 		3726B0E61ED0A0A300147C9E /* Klik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3726B0E91ED0A0A300147C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3726B0EB1ED0A0A300147C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3726B0EB1ED0A0A300147C9E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3726B0EE1ED0A0A300147C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3726B0F11ED0A0A300147C9E /* Klik.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Klik.xcdatamodel; sourceTree = "<group>"; };
 		3726B0F31ED0A0A300147C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		3726B10C1ED0A0A300147C9E /* KlikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlikUITests.swift; sourceTree = "<group>"; };
 		3726B10E1ED0A0A300147C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3751817D1ED0A982005FC608 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		375181A11ED0C216005FC608 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				3726B0E91ED0A0A300147C9E /* AppDelegate.swift */,
-				3726B0EB1ED0A0A300147C9E /* ViewController.swift */,
 				3726B0ED1ED0A0A300147C9E /* Main.storyboard */,
+				3726B0EB1ED0A0A300147C9E /* RootViewController.swift */,
+				375181A11ED0C216005FC608 /* CounterViewController.swift */,
 				3726B0F31ED0A0A300147C9E /* Assets.xcassets */,
 				3726B0F51ED0A0A300147C9E /* LaunchScreen.storyboard */,
 				3726B0F81ED0A0A300147C9E /* Info.plist */,
@@ -268,8 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375181A21ED0C216005FC608 /* CounterViewController.swift in Sources */,
 				3726B0F21ED0A0A300147C9E /* Klik.xcdatamodeld in Sources */,
-				3726B0EC1ED0A0A300147C9E /* ViewController.swift in Sources */,
+				3726B0EC1ED0A0A300147C9E /* RootViewController.swift in Sources */,
 				3751817E1ED0A982005FC608 /* InsetLabel.swift in Sources */,
 				3726B0EA1ED0A0A300147C9E /* AppDelegate.swift in Sources */,
 			);
