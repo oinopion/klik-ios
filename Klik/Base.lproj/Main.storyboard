@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YWT-Jf-K63">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,11 +7,10 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Ninja Clicker-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Klik" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,14 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.34901960780000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Ninja Clicker" id="F1u-2D-paz">
+                        <barButtonItem key="leftBarButtonItem" title="Add" id="rsS-ZQ-SD9"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="C96-bZ-gYO"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="-78" y="24"/>
         </scene>
         <!--Counter View Controller-->
         <scene sceneID="wtW-mu-C52">
@@ -42,7 +45,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="far-Qr-jSp">
-                                <rect key="frame" x="16" y="48" width="343" height="424"/>
+                                <rect key="frame" x="16" y="28" width="343" height="374"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9L-rZ-lIe" userLabel="Counter Name">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
@@ -54,7 +57,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="8SJ-JX-mCe">
-                                        <rect key="frame" x="0.0" y="56" width="343" height="368"/>
+                                        <rect key="frame" x="0.0" y="56" width="343" height="318"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-Od-6tB" userLabel="Counter Value" customClass="InsetLabel" customModule="Klik" customModuleProvider="target">
                                                 <rect key="frame" x="77.5" y="0.0" width="188" height="74"/>
@@ -84,7 +87,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdm-Hi-DQ3" userLabel="Increment Button">
-                                                <rect key="frame" x="46.5" y="118" width="250" height="250"/>
+                                                <rect key="frame" x="71.5" y="118" width="200" height="200"/>
                                                 <accessibility key="accessibilityConfiguration" label="Increment"/>
                                                 <state key="normal" image="AddButtonNormal"/>
                                                 <state key="highlighted" image="AddButtonActive"/>
@@ -97,19 +100,36 @@
                         <color key="backgroundColor" red="0.26274509800000001" green="0.34901960780000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="far-Qr-jSp" firstAttribute="leading" secondItem="KoW-p0-COc" secondAttribute="leadingMargin" id="SoU-Vr-G1W"/>
-                            <constraint firstItem="far-Qr-jSp" firstAttribute="top" secondItem="skS-df-eJF" secondAttribute="bottom" multiplier="2" constant="8" symbolic="YES" id="cll-lo-o7O"/>
+                            <constraint firstItem="far-Qr-jSp" firstAttribute="top" secondItem="skS-df-eJF" secondAttribute="bottom" constant="8" symbolic="YES" id="cll-lo-o7O"/>
                             <constraint firstAttribute="trailingMargin" secondItem="far-Qr-jSp" secondAttribute="trailing" id="y08-JE-vwU"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drq-z9-TT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="37"/>
+            <point key="canvasLocation" x="721" y="24"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aE8-v6-woV">
+            <objects>
+                <navigationController id="YWT-Jf-K63" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="WDn-HX-kQF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="apf-O9-fAg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNM-xt-1uT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-860" y="24"/>
         </scene>
     </scenes>
     <resources>
-        <image name="AddButtonActive" width="250" height="250"/>
-        <image name="AddButtonNormal" width="250" height="250"/>
+        <image name="AddButtonActive" width="200" height="200"/>
+        <image name="AddButtonNormal" width="200" height="200"/>
     </resources>
     <color key="tintColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -23,12 +23,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
                                               animated: true,
                                               completion: nil)
         pageViewController.dataSource = self
-        for view in pageViewController.view.subviews {
-            if let scrollView = view as? UIScrollView {
-                scrollView.delaysContentTouches = false
-            }
-        }
-
+        
         self.addChildViewController(pageViewController)
         self.disableTouchDelay(inChildrenOf: pageViewController.view)
         view.addSubview(pageViewController.view)
