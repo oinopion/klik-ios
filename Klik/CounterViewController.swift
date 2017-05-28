@@ -2,26 +2,41 @@ import UIKit
 
 class CounterViewController: UIViewController {
 
+    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+
+    var index: Int = 0
+    var counter: Counter!
+
+    class func fromStoryboard(for counter: Counter, at index: Int) -> CounterViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(
+            withIdentifier: "CounterViewController") as! CounterViewController
+
+        controller.counter = counter
+        controller.index = index
+
+        return controller
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateName()
+        updateValue()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func incrementPressed() {
+        AppDelegate.repo.incrementCounter(counter)
+        updateValue()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func updateName() {
+        nameLabel.text = counter.name
     }
-    */
+
+    func updateValue() {
+        let padded = String(format: "%05d", counter.value)
+        valueLabel.text = padded
+    }
 
 }

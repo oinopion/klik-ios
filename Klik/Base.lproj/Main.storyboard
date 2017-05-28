@@ -24,7 +24,11 @@
                         <color key="backgroundColor" red="0.26274509800000001" green="0.34901960780000002" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ninja Clicker" id="F1u-2D-paz">
-                        <barButtonItem key="leftBarButtonItem" title="Add" id="rsS-ZQ-SD9"/>
+                        <barButtonItem key="leftBarButtonItem" title="Add" id="rsS-ZQ-SD9">
+                            <connections>
+                                <action selector="addCounterPressed:" destination="BYZ-38-t0r" id="8le-ha-KBN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="C96-bZ-gYO"/>
                     </navigationItem>
                 </viewController>
@@ -91,6 +95,9 @@
                                                 <accessibility key="accessibilityConfiguration" label="Increment"/>
                                                 <state key="normal" image="AddButtonNormal"/>
                                                 <state key="highlighted" image="AddButtonActive"/>
+                                                <connections>
+                                                    <action selector="incrementPressed" destination="7lE-ig-hyA" eventType="touchUpInside" id="bqZ-GS-jSG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -104,6 +111,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="far-Qr-jSp" secondAttribute="trailing" id="y08-JE-vwU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="f9L-rZ-lIe" id="61m-Ct-eln"/>
+                        <outlet property="valueLabel" destination="M2a-Od-6tB" id="6qU-XC-obw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="drq-z9-TT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

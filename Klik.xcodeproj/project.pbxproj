@@ -17,6 +17,8 @@
 		3726B10D1ED0A0A300147C9E /* KlikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3726B10C1ED0A0A300147C9E /* KlikUITests.swift */; };
 		3751817E1ED0A982005FC608 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3751817D1ED0A982005FC608 /* InsetLabel.swift */; };
 		375181A21ED0C216005FC608 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375181A11ED0C216005FC608 /* CounterViewController.swift */; };
+		37ECDCCF1ED4BC90000DAC1A /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECDCCE1ED4BC90000DAC1A /* Counter.swift */; };
+		37ECDCD11ED4BED8000DAC1A /* CounterRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ECDCD01ED4BED8000DAC1A /* CounterRepo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3726B10E1ED0A0A300147C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3751817D1ED0A982005FC608 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
 		375181A11ED0C216005FC608 /* CounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		37ECDCCE1ED4BC90000DAC1A /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		37ECDCD01ED4BED8000DAC1A /* CounterRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterRepo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				3726B0F81ED0A0A300147C9E /* Info.plist */,
 				3726B0F01ED0A0A300147C9E /* Klik.xcdatamodeld */,
 				3751817D1ED0A982005FC608 /* InsetLabel.swift */,
+				37ECDCCE1ED4BC90000DAC1A /* Counter.swift */,
+				37ECDCD01ED4BED8000DAC1A /* CounterRepo.swift */,
 			);
 			path = Klik;
 			sourceTree = "<group>";
@@ -273,7 +279,9 @@
 			files = (
 				375181A21ED0C216005FC608 /* CounterViewController.swift in Sources */,
 				3726B0F21ED0A0A300147C9E /* Klik.xcdatamodeld in Sources */,
+				37ECDCCF1ED4BC90000DAC1A /* Counter.swift in Sources */,
 				3726B0EC1ED0A0A300147C9E /* RootViewController.swift in Sources */,
+				37ECDCD11ED4BED8000DAC1A /* CounterRepo.swift in Sources */,
 				3751817E1ED0A982005FC608 /* InsetLabel.swift in Sources */,
 				3726B0EA1ED0A0A300147C9E /* AppDelegate.swift in Sources */,
 			);
