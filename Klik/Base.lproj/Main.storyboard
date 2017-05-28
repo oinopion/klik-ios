@@ -29,7 +29,11 @@
                                 <action selector="addCounterPressed:" destination="BYZ-38-t0r" id="8le-ha-KBN"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="C96-bZ-gYO"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="C96-bZ-gYO">
+                            <connections>
+                                <action selector="editCounterPressed:" destination="BYZ-38-t0r" id="rUz-FM-Pd8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

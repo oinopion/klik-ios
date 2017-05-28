@@ -2,6 +2,9 @@ import UIKit
 
 class RootViewController: UIViewController {
     var pageViewController: UIPageViewController!
+    var currentViewController: CounterViewController {
+        return pageViewController.viewControllers![0] as! CounterViewController
+    }
 
     var counters = [Counter]()
     var currentIndex = 0
@@ -19,6 +22,32 @@ class RootViewController: UIViewController {
         let counter = AppDelegate.repo.addCounter()
         counters.append(counter)
         scrollToTheEnd()
+    }
+
+    @IBAction func editCounterPressed(_ sender: Any) {
+        let alertController = UIAlertController(
+            title: "Edit counter name",
+            message: "Try emojis for extra fun! ✨",
+            preferredStyle: .alert)
+
+        alertController.addTextField() { [unowned self] textField in
+            textField.placeholder = "Counter name"
+            textField.text = self.currentCounter.name
+        }
+
+        let okAction = UIAlertAction(title: "OK", style: .default) {
+            [unowned self, unowned alertController] (_) in
+            let counterNameField = alertController.textFields![0] as UITextField
+            if let name = counterNameField.text {
+                AppDelegate.repo.setCounterName(self.currentCounter, name: name)
+                self.currentViewController.counterDidUpdate()
+            }
+        }
+
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alertController.addAction(okAction)
+
+        present(alertController, animated: true)
     }
 
     var firstCounter: Counter {

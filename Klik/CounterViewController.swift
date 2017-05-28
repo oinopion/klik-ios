@@ -21,12 +21,16 @@ class CounterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateName()
-        updateValue()
+        counterDidUpdate()
     }
 
     @IBAction func incrementPressed() {
         AppDelegate.repo.incrementCounter(counter)
+        updateValue()
+    }
+
+    public func counterDidUpdate() {
+        updateName()
         updateValue()
     }
 

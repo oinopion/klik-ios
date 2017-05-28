@@ -33,6 +33,11 @@ class CounterRepo {
         saveContext()
     }
 
+    func setCounterName(_ counter: Counter, name: String) {
+        counter.name = name
+        saveContext()
+    }
+
     func addCounter() -> Counter {
         let counter = Counter(context: viewContext)
         counter.id = UUID().uuidString
