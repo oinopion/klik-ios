@@ -41,7 +41,7 @@ class CounterRepo {
     func addCounter() -> Counter {
         let counter = Counter(context: viewContext)
         counter.id = UUID().uuidString
-        counter.createdAt = Date() as NSDate
+        counter.createdAt = Date()
         saveContext()
         return counter
     }
